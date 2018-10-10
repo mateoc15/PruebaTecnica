@@ -31,4 +31,9 @@ public class EncuestaController {
     public int getPreferenciaGaseosa() {
         return encuestaService.obtenerPreferenciaGaseosa();
     }
+
+    @RequestMapping(value = "/numeroencuestas", method = RequestMethod.GET)
+    public long getNumeroEncuestas() {
+        return encuestaService.obtenerNumeroEncuestas();
+    }
 }

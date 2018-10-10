@@ -24,4 +24,8 @@ public class EncuestaService {
     public int obtenerPreferenciaGaseosa(){
         return this.encuestaDao.preferenciaGaseosa();
     }
+
+    public long obtenerNumeroEncuestas(){
+        return this.encuestaDao.count();
+    }
 }
