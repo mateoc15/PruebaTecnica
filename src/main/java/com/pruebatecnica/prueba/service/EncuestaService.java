@@ -24,5 +24,11 @@ public class EncuestaService {
     public int obtenerPreferenciaGaseosa(){
         return this.encuestaDao.preferenciaGaseosa();
     }
+
     public Iterable<Object> obtenerBebidaPreferida(){ return this.encuestaDao.bebidaPreferida();}
+
+    public long obtenerNumeroEncuestas(){
+        return this.encuestaDao.count();
+    }
+
 }
