@@ -31,4 +31,9 @@ public class EncuestaController {
     public int getPreferenciaGaseosa() {
         return encuestaService.obtenerPreferenciaGaseosa();
     }
+    @RequestMapping(value = "/bebidapreferida", method = RequestMethod.GET)
+    public Iterable<Object> getBebidaPreferida() {
+        return encuestaService.obtenerBebidaPreferida();
+    }
+
 }

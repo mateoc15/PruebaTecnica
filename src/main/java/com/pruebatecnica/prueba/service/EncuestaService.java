@@ -24,4 +24,5 @@ public class EncuestaService {
     public int obtenerPreferenciaGaseosa(){
         return this.encuestaDao.preferenciaGaseosa();
     }
+    public Iterable<Object> obtenerBebidaPreferida(){ return this.encuestaDao.bebidaPreferida();}
 }
