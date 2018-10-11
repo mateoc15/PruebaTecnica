@@ -31,4 +31,8 @@ public class EncuestaService {
         return this.encuestaDao.count();
     }
 
+    public Iterable<Object> obtenerProgMenosParticipacion(){
+        return this.encuestaDao.programaMenosParticipacion();
+    }
+
 }

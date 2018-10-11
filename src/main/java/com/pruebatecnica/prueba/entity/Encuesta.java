@@ -1,5 +1,8 @@
 package com.pruebatecnica.prueba.entity;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import javax.persistence.*;
 
 @Entity
@@ -12,6 +15,7 @@ public class Encuesta {
 
     @ManyToOne
     @JoinColumn(name = "ID_PROGRAMA")
+    @Fetch(FetchMode.JOIN)
     private Programa programa;
 
     @Column(name = "GENERO", nullable = false, length = 255)

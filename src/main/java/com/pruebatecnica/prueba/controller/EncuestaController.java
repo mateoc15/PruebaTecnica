@@ -41,4 +41,9 @@ public class EncuestaController {
     public long getNumeroEncuestas() {
         return encuestaService.obtenerNumeroEncuestas();
     }
+
+    @RequestMapping(value = "/menosparticipacion", method = RequestMethod.GET)
+    public Iterable<Object> getMenorParticipacion() {
+        return encuestaService.obtenerProgMenosParticipacion();
+    }
 }
