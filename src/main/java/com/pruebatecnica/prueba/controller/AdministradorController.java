@@ -11,6 +11,7 @@ public class AdministradorController {
     @Autowired
     AdministradorService administradorService;
 
+    @CrossOrigin
     @RequestMapping(value = "/admin", params = {"user", "pass"}, method = RequestMethod.GET)
     @ResponseBody
     public int esAdmin(@RequestParam("user") String user, @RequestParam("pass") String pass) {

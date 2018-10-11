@@ -16,12 +16,14 @@ public class ProgramaController {
     @Autowired
     ProgramaService programaService;
 
+    @CrossOrigin
     @RequestMapping(value = "/all", method = RequestMethod.GET)
     public Iterable<Programa> getAllProgramas() {
 
         return programaService.getAllProgramas();
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/addprograma", method = RequestMethod.POST,
             consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody()
